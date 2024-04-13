@@ -24,3 +24,24 @@
 # Transporter => going to be an object , thats going to send mail
 
 # Transport =>
+
+# Added some stuff using nodemon in emailConfig , serverConfig , email-service & using this it send the mail
+
+# Begins the scheduling task
+
+- npm i node-cron
+- import it & add cron.schedule , it will log after every 1 min
+
+# Setup sequelize
+
+- npx sequelize init
+- Add db name & pass in config
+- npx sequelize db:create
+
+# creating Model inside src
+
+- npx sequelize model:generate --name NotificationTicket --attributes subject:string,content:string,recepientEmail:string,status:enum,notificationTime:date
+
+# Added allownull in models & migration
+
+- npx sequelize db:migrate

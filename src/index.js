@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const { PORT } = require("./config/serverConfig");
 const { sendBasicMail } = require("./services/email-service");
+const cron = require("node-cron");
 const setupAndStartServer = () => {
   const app = express();
   app.use(bodyParser.json());
@@ -16,6 +17,10 @@ const setupAndStartServer = () => {
       "Fiercy Russian Hacker",
       "You are hacked again :)"
     );
+
+    cron.schedule("* * * * *", () => {
+      console.log("running a task every minute");
+    });
   });
 };
 
