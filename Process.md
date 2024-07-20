@@ -50,7 +50,8 @@
 
 - Before service lets interact with model using repository so setup the repository
 
+## Final Process flow
 
-
-
-
+-> Index.js = jobs()
+-> Utils = cron schedule
+-> Services = find pending emails
