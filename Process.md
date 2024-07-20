@@ -45,3 +45,12 @@
 # Added allownull in models & migration
 
 - npx sequelize db:migrate
+
+# Inside utils folder , setup the cron , now its logic time , so will move towards services
+
+- Before service lets interact with model using repository so setup the repository
+
+
+
+
+

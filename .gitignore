@@ -1,3 +1,5 @@
 node_modules/
 .env
 Process.md
+
+src/config/config.json
